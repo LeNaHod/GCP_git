@@ -1,0 +1,5 @@
+FROM python:3.9.15
+WORKDIR C:\Users\Na\Desktop\projcet_3_file\testdjango
+RUN pip install Django==4.1.4
+RUN django-admin startproject t_djnago
+CMD ["python", "./t_djnago/manage.py", "runserver", "0.0.0.0:9510"]
